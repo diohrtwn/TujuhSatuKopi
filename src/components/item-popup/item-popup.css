@@ -1,0 +1,195 @@
+/* Overlay for the entire screen */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Pop-up content styling */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-title {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #000; /* Ensure title is black */
+}
+
+.popup-price {
+  font-size: 2rem;
+  color: #000 !important; /* Ensure price is black */
+  margin: 10px 0;
+}
+
+.popup-description {
+  font-size: 1rem !important;
+  color: #000 !important; /* Ensure description is black */
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.instructions-label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.instructions-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quantity-button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quantity-display {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.update-button {
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.update-button:hover {
+  background-color: darkgreen;
+}
+
+.confirmation-popup {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: green;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  text-align: center;
+  cursor: pointer; /* Make the entire confirmation popup clickable */
+}
+
+.confirmation-popup:hover {
+  background-color: darkgreen;
+}
+
+.confirmation-content {
+  display: flex;
+  align-items: center;  
+}
+
+.confirmation-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.confirmation-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.confirmation-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 160px;
+}
+
+/* Cup Size Container */
+.cup-size-container {
+  margin-bottom: 10px;
+}
+
+/* Cup Size Selector */
+.cup-size-selector {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cup-size-option {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cup-size-option.selected {
+  background-color: #ddd;
+  border-color: #888;
+  font-size: 1rem;
+}
+
+.cup-size-option:hover {
+  background-color: #ddd;
+}
+
+.cup-size-option input {
+  display: none;
+}

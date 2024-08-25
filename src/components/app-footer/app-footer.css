@@ -1,0 +1,86 @@
+/* Styling for footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    background-color: #2c2c2c;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-left: 5rem; /* Geser keseluruhan konten footer-left ke kanan */
+    margin-top: 2.1rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding-left: 10.5rem; /* Geser tulisan TujuhSatuKopi ke kanan */
+    margin-bottom: 2rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row; /* Mengatur menu dalam satu baris */
+    align-items: center;
+    gap: 2rem; /* Menambah jarak antar menu */
+    margin-left: 6rem;
+}
+
+.footer-nav_item {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.footer-nav_item:hover {
+    color: #FFD700; /* Ganti warna sesuai keinginan */
+}
+
+.footer-social {
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 4rem;
+    margin-right: 0.5rem;
+    padding-left: 17rem;
+    text-decoration: none;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact hr {
+    width: 50px;
+    margin: 2.5rem 0;
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footer-contact p {
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+}

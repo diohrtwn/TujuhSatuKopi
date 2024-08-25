@@ -1,0 +1,90 @@
+/* best-coffee-item.css */
+
+.best-item {
+    background: #f5deb3; /* Warna latar belakang card */
+    padding: 20px; /* Padding di dalam card */
+    border-radius: 15px; /* Border radius untuk sudut membulat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan card */
+    max-width: 200px; /* Lebar maksimum card */
+    text-align: center; /* Teks dipusatkan */
+    transition: transform 0.2s ease-in-out; /* Efek transisi saat hover */
+    position: relative; /* Posisi relatif untuk label "Promo" */
+    display: flex;
+    flex-direction: column; /* Elemen disusun secara vertikal */
+    justify-content: space-between; /* Spasi antara elemen vertikal */
+    align-items: center;  /* Elemen dipusatkan secara horizontal */
+  }
+  
+  .best-item:hover {
+    transform: scale(1.05); /* Card sedikit membesar saat di-hover */
+  }
+  
+  .item-image {
+    width: 100px; /* Lebar gambar */
+    height: 100px; /* Tinggi gambar */
+    object-fit: cover; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Border radius untuk gambar */
+    margin-bottom: 15px; /* Margin bawah gambar */
+  }
+  
+  .item-price {
+    font-size: 1.2em; /* Ukuran font harga */
+    color: #000; /* Warna teks harga */
+    margin: 10px 0; /* Margin atas dan bawah harga */
+    display: flex; 
+    justify-content: center; /* Harga dipusatkan secara horizontal */
+    align-items: center; /* Harga dipusatkan secara vertikal */
+  }
+  
+  .original-price {
+    text-decoration: line-through; /* Harga asli dicoret */
+    color: red; /* Warna teks harga asli */
+    margin-right: 5px; /* Margin kanan harga asli */
+  }
+  
+  .best-item h2 {
+    font-size: 1.5rem; /* Ukuran font nama item */
+    color: #000; /* Warna teks nama item */
+    margin: 10px 0; /* Margin atas dan bawah nama item */
+  }
+  
+  .best-item p { 
+    font-size: 1.3rem; /* Ukuran font deskripsi item */
+    color: #000; /* Warna teks deskripsi item */
+  }
+  
+  .promo-label {
+    position: absolute; 
+    top: 10px; /* Posisi dari atas */
+    left: 10px; /* Posisi dari kiri */
+    background-color: red; /* Warna latar belakang label */
+    color: white; /* Warna teks label */
+    padding: 5px; /* Padding di dalam label */
+    font-size: 0.8rem; /* Ukuran font label */
+    border-radius: 5px; /* Border radius untuk label */
+  }
+  
+  .add-button {
+    background-color: #fff; /* Warna latar belakang tombol */
+    color: green; /* Warna teks tombol */
+    border: 2px solid green; /* Border tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border-radius: 25px; /* Border radius untuk tombol */
+    cursor: pointer; /* Kursor berubah menjadi pointer saat di-hover */
+    margin-top: 10px; /* Margin atas tombol */
+    font-size: 1rem; /* Ukuran font tombol */
+    text-align: center; /* Teks dipusatkan */
+    width: 100%; /* Lebar tombol */
+    box-sizing: border-box; /* Box model tombol */
+    transition: background-color 0.2s, color 0.2s; /* Efek transisi saat hover */
+  }
+  
+  .add-button:hover {
+    background-color: green; /* Warna latar belakang berubah saat di-hover */
+    color: #fff; /* Warna teks berubah saat di-hover */
+  }
+  
+  .no-decoration { 
+    text-decoration: none; /* Menghilangkan dekorasi link */
+    color: black; /* Warna teks link */
+  }

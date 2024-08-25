@@ -1,0 +1,75 @@
+* {
+  font-family: "Exo", sans-serif;
+  max-width: 100%;
+}
+.info-leadingtext {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin: 1rem;
+}
+
+.info {
+  text-align: center;
+  background-image: url(/public/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10rem;
+  padding-top: 6rem;
+}
+
+.info-maintext {
+  margin: 8rem 20% 0;
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.info-maintext:nth-child(3) {
+  margin-top: 4rem;
+}
+
+.info-leadingtext {
+  color: black;
+  position: relative;
+}
+
+.info-leadingtext::after {
+  content: url(/public/img/lines_black_beans.svg);
+  width: 12rem;
+  height: 3rem;
+  position: absolute;
+  top: 160%;
+  left: 8%;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.best {
+  background-image: url(/public/img/background.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 8rem;
+}
+
+.best-leadingtext {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.best-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Tambahkan ini jika Anda ingin card bisa wrap ke baris baru */
+  padding-top: 3rem;
+}

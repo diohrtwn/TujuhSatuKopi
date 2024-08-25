@@ -1,0 +1,30 @@
+/* src/toast.css */
+
+.custom-toast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .custom-toast {
+    font-size: 18px; /* Adjust the font size for larger text */
+    padding: 20px 30px; /* Adjust padding for larger toast */
+    background-color: #333; /* Example background color */
+    color: #fff; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+  }
+  
+  .custom-toast-success {
+    background-color: #28a745; /* Example success background color */
+  }
+  
+  .custom-toast-error {
+    background-color: #dc3545; /* Example error background color */
+  }
+  

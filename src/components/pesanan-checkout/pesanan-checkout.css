@@ -1,0 +1,664 @@
+.pesanan-main-content {
+  padding: 20px;
+  background-image: url(/public/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 140px); /* Adjust to keep footer at bottom */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 14rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.2em; /* Enlarges all text within the container */
+}
+
+.checkout-container h1 {
+  text-align: center; /* Centers the text "Checkout" */
+  font-size: 2rem;
+}
+
+.checkout-container h2 {
+  font-size: 1.8rem;
+}
+
+.location-section,
+.order-section,
+.total-section {
+  margin-bottom: 20px;
+}
+
+.location-section h2,
+.order-section h2,
+.total-section h2 {
+  margin-bottom: 10px;
+}
+
+.order-delivery h2 {
+  margin-top: 20px;
+}
+
+.order-header {
+  text-align: center; /* Centers the text "Order" */
+  margin-top: 5rem;
+}
+
+.location-section p {
+  font-size: 1.1rem; /* Enlarges the address text */
+}
+
+.pickup-delivery-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.option {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  display: flex; /* Untuk menyusun ikon dan teks */
+  align-items: center; /* Agar ikon dan teks sejajar secara vertikal */
+}
+
+.option:hover {
+  background-color: #f5f5f5;
+}
+
+.option svg {
+  margin-right: 8px;
+  font-size: 1.8rem;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.option label {
+  flex: 1;
+  font-size: 1.4rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-image {
+  width: 75px; /* Enlarges the image */
+  height: 75px; /* Enlarges the image */
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-right: 20px;
+}
+
+.item-details {
+  flex: 1;
+  font-size: 1.1em; /* Enlarges the font in item details */
+}
+
+.item-total {
+  font-weight: bold;
+  font-size: 1.5rem; /* Enlarges the total price font */
+}
+
+.item-details {
+  font-size: 1.3rem;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantity-control button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  font-size: 1.2rem;
+}
+
+.location-header {
+  position: relative; /* Agar bisa memposisikan anak absolut */
+}
+
+.title-container {
+  flex: 1;
+}
+
+.maps-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.maps-icon {
+  max-width: 300px;
+  height: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Pastikan popup berada di atas elemen lain */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px; /* Padding diperbesar */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem; /* Ukuran font diperbesar */
+}
+
+.popup-header h2 {
+  /* Gunakan h2 untuk judul popup */
+  font-size: 1.8rem; /* Ukuran font judul diperbesar */
+  margin-bottom: 2rem;
+}
+
+.close-button {
+  /* Gaya khusus untuk tombol close */
+  border: none;
+  background: none;
+  font-size: 2rem; /* Ukuran tombol close diperbesar */
+  cursor: pointer;
+  padding: 0; /* Reset padding default */
+}
+
+.popup-header button {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-buttons {
+  margin-top: 25px; /* Margin atas diperbesar */
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-buttons button {
+  padding: 12px 25px; /* Padding diperbesar */
+  border: none;
+  border-radius: 8px; /* Border radius diperbesar */
+  font-size: 1.2rem; /* Ukuran font diperbesar */
+  cursor: pointer;
+  margin: 0 8px; /* Margin diperbesar */
+}
+
+.popup-buttons button:first-child {
+  background-color: #ccc;
+}
+
+.popup-buttons button:last-child {
+  background-color: #ff6f00;
+  color: white;
+}
+
+.delivery-address-section {
+  margin-bottom: 20px;
+}
+
+.address-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.address-input-group label {
+  margin-bottom: 5px;
+}
+
+.address-input-group input,
+.address-input-group select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.phone-number-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-number-input select {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.phone-number-input input {
+  flex: 1;
+}
+
+/* Gaya untuk tombol "Save Address" */
+.select-payment-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f00; /* Warna default orange */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.select-payment-button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc; /* Warna abu-abu saat tombol nonaktif */
+}
+
+.select-payment-button:enabled:hover {
+  background-color: #ff8f00; /* Warna orange lebih gelap saat hover */
+}
+
+.delivery-title {
+  text-align: center;
+}
+
+.disabled-option {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none; /* Mencegah event klik */
+}
+
+/* Gaya untuk tombol "Save Address" */
+.save-address-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f00; /* Warna default orange */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.save-address-button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+.save-address-button:enabled:hover {
+  background-color: #ff8f00;
+}
+
+.delivery-info {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.delivery-provider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.billing-details {
+  margin-top: 20px;
+}
+
+.billing-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.delivery-to {
+  font-size: 1.8rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+
+.recipient-info {
+  font-size: 1.5rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+
+.provider-name {
+  font-size: 1.5rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+
+.provider-logo {
+  width: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  height: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.address {
+  font-size: 1.5rem;
+}
+
+.edit-icon {
+  cursor: pointer;
+  margin-left: 10px; /* Beri jarak antara teks dan ikon */
+  font-size: 1.2rem; /* Sesuaikan ukuran ikon */
+}
+
+/* Gaya untuk wrapper recipient info agar ikon bisa disejajarkan */
+.recipient-info-wrapper {
+  display: flex;
+  align-items: center; /* Sejajarkan ikon dan teks secara vertikal */
+}
+
+/* Gaya untuk header Delivery to dan ikon */
+.delivery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevron-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.chevron-container {
+  /* Tambahkan CSS baru ini */
+  position: absolute;
+  top: 20px; /* Atur posisi vertikal ikon */
+  right: 20px; /* Atur posisi horizontal ikon */
+  margin-top: 7rem;
+}
+
+.cancel-edit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ccc; /* Warna abu-abu */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Beri jarak dari tombol Save Address */
+}
+
+.cancel-edit-button:hover {
+  background-color: #aaa; /* Warna abu-abu lebih gelap saat hover */
+}
+
+/* Delivery Provider Popup */
+.delivery-provider-popup {
+  width: 450px;
+}
+
+.delivery-provider-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid transparent; /* Border awal transparan */
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.delivery-provider-option:hover {
+  border-color: #f5d6a4; /* Warna border saat dihover */
+}
+
+.delivery-provider-option.selected {
+  border-color: #f5d6a4; /* Warna border saat terpilih */
+}
+
+.delivery-provider-option:last-child {
+  border-bottom: none;
+}
+
+.delivery-provider-option .provider-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.delivery-provider-option .provider-name {
+  flex: 1;
+}
+
+.delivery-provider-option .provider-price {
+  font-weight: bold;
+}
+
+.select-provider-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.select-provider-button:hover {
+  background-color: #ff8f00;
+}
+
+.delivery-provider .chevron-icon {
+  position: absolute; /* Posisikan chevron secara absolut */
+  right: 10px; /* Atur jarak dari kanan */
+  top: 50%;
+  transform: translateY(-50%); /* Pusatkan chevron secara vertikal */
+}
+
+.voucher-section {
+  display: flex;
+  align-items: center; /* Sejajarkan ikon dan teks secara vertikal */
+  padding: 10px; /* Tambahkan padding */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di hover */
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+
+.voucher-icon {
+  margin-right: 10px; /* Beri jarak antara ikon dan teks */
+  font-size: 25px;
+}
+
+.chevron-icon {
+  margin-left: auto; /* Geser ikon chevron ke kanan */
+}
+
+.voucher-applied {
+  background-color: #ccc; /* Ubah warna tombol */
+  cursor: default; /* Ubah kursor */
+}
+
+/* Voucher Popup */
+.voucher-popup {
+  /* Gaya untuk container popup voucher */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.voucher-popup-content {
+  /* Gaya untuk konten di dalam popup voucher */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+.voucher-popup-header {
+  /* Gaya untuk header popup voucher */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Tambahkan margin bawah */
+}
+
+.voucher-popup-header h2 {
+  /* Gaya untuk judul popup voucher */
+  font-size: 1.8rem;
+  margin: 0; /* Reset margin default */
+  text-align: center;
+}
+
+.voucher-close-button {
+  /* Gaya untuk tombol tutup popup voucher */
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.voucher-option {
+  /* Gaya untuk setiap pilihan voucher */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.voucher-option:hover {
+  border-color: #f5d6a4;
+}
+
+.voucher-option.selected {
+  border-color: #f5d6a4;
+}
+
+.voucher-description {
+  /* Gaya untuk deskripsi voucher */
+  flex: 1;
+  text-align: left; /* Sejajarkan teks ke kiri */
+}
+
+.apply-voucher-button {
+  /* Gaya untuk tombol "Pasang" */
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-voucher-button:hover {
+  background-color: #ff8f00;
+}
+
+.apply-voucher-button.voucher-applied {
+  /* Gaya untuk tombol "Pasang" setelah voucher diterapkan */
+  background-color: #ccc;
+  cursor: default;
+}
+
+.ok-voucher-button {
+  /* Gaya untuk tombol "Ok" */
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Tambahkan margin atas */
+  width: 100%;
+}
+
+.ok-voucher-button:hover {
+  background-color: #ff8f00;
+}
+
+.voucher-applied-text {
+  margin-top: 10px;
+  color: #888; /* Warna abu-abu */
+  font-size: 1.4rem;
+}
+
+.order-summary-discount {
+  color: red; /* Ganti warna diskon menjadi merah */
+  margin-left: 300px;
+}
+
+.order-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.order-summary-section {
+  font-size: 1.3rem;
+}

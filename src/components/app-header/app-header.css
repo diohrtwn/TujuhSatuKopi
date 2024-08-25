@@ -1,0 +1,157 @@
+/* General styling for header */
+.header {
+  position: relative;
+  margin: -0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header:not(.goodPage) {
+  height: 70rem;
+  max-width: 100%;
+  background-image: url(/public/img/kopi_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling for header navigation */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  align-items: center;  
+  padding: 2rem 10%;
+  background-color: rgba(139, 139, 139, 0.185); /* Transparan hitam */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for logo */
+.header-logo {
+  flex: 1;
+}
+
+.header-logo_img {
+  width: 8rem; /* Sesuaikan ukuran logo */
+  height: auto;
+  border-radius: 30%; /* Membuat border radius */
+}
+
+/* Styling for main navigation items */
+.header-nav_main {
+  display: flex;
+  gap: 4rem;
+  flex: 2;
+  justify-content: center;
+}
+
+/* Styling for login navigation item */
+.header-nav_login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+/* Styling for header and footer navigation items */
+.header-nav_item, .footer-nav_item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.header-nav_item:hover, .footer-nav_item:hover {
+  color: #FFD700; /* Ganti warna sesuai keinginan */
+}
+
+/* Specific styling for the login item */
+.header-nav_item--login {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1.5rem; /* Mengubah ukuran font agar sama dengan item lainnya */
+  line-height: 1.7rem;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-nav_item--login:hover {
+  color: #FFD700; /* Ganti warna sesuai keinginan */
+  border-radius: 5px;
+}
+
+.login-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem; /* Mengubah ukuran icon agar lebih besar */
+}
+
+/* Styling for header texts */
+.header-leadingtext h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin: 1rem;
+}
+
+.header-leadingtext h1 {
+  font-size: 4rem;
+  line-height: 5.8rem;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header-leadingtext h1::after {
+  content: url(/public/img/lines_white_beans.svg);
+  height: 3rem;
+}
+
+.header-leadingtext img {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Styling for header button */
+.header-button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: transparent;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 9.5rem;
+  margin-top: 1.5rem;
+}

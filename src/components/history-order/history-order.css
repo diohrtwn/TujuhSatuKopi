@@ -1,0 +1,192 @@
+.history-main-content {
+  padding: 20px;
+  background-image: url(/public/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 180px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.history-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.history-status {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.history-status.pending {
+  background-color: #ffc000; /* Kuning */
+  color: #fff;
+}
+
+.history-status.success {
+  background-color: #2ecc71; /* Hijau */
+  color: #fff;
+}
+
+.history-items {
+  margin-bottom: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.history-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.history-item-image-container {
+  margin-right: 10px;
+}
+
+.history-item-details-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.history-item-name,
+.history-item-cupSize,
+.history-item-instructions,
+.history-item-quantity {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.history-item-cupSize,
+.history-item-instructions {
+  font-size: 14px;
+  display: block;
+  color: gray;
+}
+
+.history-item-price {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.history-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.history-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.history-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.history-item-instructions {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+.history-item-price-wrapper {
+  text-align: right;
+}
+
+.history-item-details {
+  flex: 1;
+}
+
+.history-detail-label {
+  font-size: 14px;
+}
+
+.history-detail-value {
+  text-align: right;
+  font-size: 14px;
+}
+
+.history-delivery-info {
+  margin-bottom: 15px; /* Atau sesuai kebutuhan */
+}
+
+.history-delivery-info__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.history-delivery-info__recipient {
+  font-size: 14px;
+  margin-bottom: 5px; 
+}
+
+.history-delivery-info__name {
+  font-weight: 600; /* Agak tebal untuk nama penerima */
+}
+
+.history-delivery-info__address {
+  font-size: 14px;
+}
+
+/* Pickup Info */
+.history-pickup-info {
+  margin-bottom: 15px; 
+}
+
+.history-pickup-info__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.history-pickup-info__address {
+  font-size: 14px;
+}

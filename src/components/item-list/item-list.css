@@ -1,0 +1,107 @@
+.item-list {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15rem;
+}
+
+.item-list h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.item-list p {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-card {
+  background: #f5deb3;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center align content horizontally */
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.item-price {
+  font-size: 1.2em;
+  color: #000;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; /* Center align prices horizontally */
+  align-items: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 5px;
+}
+
+.item-card h2 {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 10px 0;
+}
+
+.item-card p {
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.promo-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.add-button {
+  background-color: #fff;
+  color: green;
+  border: 2px solid green;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.add-button:hover {
+  background-color: green;
+  color: #fff;
+}
